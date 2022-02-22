@@ -18,7 +18,4 @@
             <directory suffix=".php">./src</directory>
         </include>
     </coverage>
-    <php>
-        <env name="PREVENT_OUTPUT_GLOBALLY" value="true"/>
-    </php>
 </phpunit>
