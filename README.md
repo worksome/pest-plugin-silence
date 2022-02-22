@@ -1,5 +1,8 @@
 # Pest Plugin Silence
 
+[![Tests](https://github.com/worksome/pest-plugin-silence/actions/workflows/tests.yml/badge.svg)](https://github.com/worksome/pest-plugin-silence/actions/workflows/tests.yml)
+[![PHPStan](https://github.com/worksome/pest-plugin-silence/actions/workflows/static.yml/badge.svg)](https://github.com/worksome/pest-plugin-silence/actions/workflows/static.yml)
+
 Often, when writing tests, we `echo` and `dump` test code to debug and check everything is working correctly.
 It can be easy to forget to remove those statements when you've finished, which can lead to a lot of messy output
 in your test results. Yuk!
