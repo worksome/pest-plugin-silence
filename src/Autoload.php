@@ -5,14 +5,11 @@ declare(strict_types=1);
 namespace Pest\PluginName;
 
 use Pest\Plugin;
-use PHPUnit\Framework\TestCase;
+use Worksome\PestPluginSilence\Concerns\PreventsOutput;
+use Worksome\PestPluginSilence\Silence;
 
-Plugin::uses(Example::class);
+Plugin::uses(PreventsOutput::class);
 
-/**
- * @return TestCase
- */
-function example(string $argument)
-{
-    return test()->example(...func_get_args());
+if (getenv('PREVENT_OUTPUT') !== false) {
+    Silence::preventOutput();
 }
