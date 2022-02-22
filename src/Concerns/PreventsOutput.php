@@ -18,11 +18,15 @@ trait PreventsOutput
     public function preventOutput(): void
     {
         $this->setOutputCallback(function (string $output) {
-            if (Silence::shouldPreventOutput() === false) {
+            if (strlen($output) === 0) {
                 return $output;
             }
 
-            if (strlen($output) === 0) {
+            if (getenv('PREVENT_OUTPUT') !== false) {
+                $this->fail('Tests should not output anything to the console.');
+            }
+
+            if (Silence::shouldPreventOutput() === false) {
                 return $output;
             }
 
