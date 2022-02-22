@@ -10,6 +10,12 @@ in your test results. Yuk!
 Silence is a lightweight plugin for [Pest](https://pestphp.com) that will cause any test that `echo`s or `dump`s to the console
 to fail, meaning that you'll never forget to remove those statements from your codebase.
 
+Before:
+<img width="435" alt="CleanShot 2022-02-22 at 14 51 15@2x" src="https://user-images.githubusercontent.com/12202279/155157865-6fe199e7-504c-4354-96e1-33b052cffe31.png">
+
+After:
+<img width="526" alt="CleanShot 2022-02-22 at 14 53 35@2x" src="https://user-images.githubusercontent.com/12202279/155157966-6ec4049b-0865-4e5c-99d8-1732e0636089.png">
+
 ## Installation
 
 Install the plugin via composer.
