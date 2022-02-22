@@ -19,11 +19,11 @@ trait PreventsOutput
     {
         $this->setOutputCallback(function (string $output) {
             if (Silence::shouldPreventOutput() === false) {
-                return;
+                return $output;
             }
 
             if (strlen($output) === 0) {
-                return;
+                return $output;
             }
 
             $this->fail('Tests should not output anything to the console.');
