@@ -2,7 +2,7 @@
 
 use Worksome\PestPluginSilence\Silence;
 
-uses()->group('runnable')->beforeEach(function () {
+beforeEach(function () {
     Silence::preventOutput();
 });
 
