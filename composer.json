@@ -1,6 +1,6 @@
 {
-    "name": "pestphp/pest-plugin-template",
-    "description": "My awesome plugin",
+    "name": "worksome/pest-plugin-silence",
+    "description": "Prevent unwanted output in tests.",
     "keywords": [
         "php",
         "framework",
@@ -12,7 +12,7 @@
     ],
     "license": "MIT",
     "require": {
-        "php": "^7.3 || ^8.0",
+        "php": "^8.0",
         "pestphp/pest": "^1.0",
         "pestphp/pest-plugin": "^1.0"
     },
