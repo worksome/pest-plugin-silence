@@ -15,15 +15,15 @@ jobs:
     - name: Setup PHP
       uses: shivammathur/setup-php@v2
       with:
-        php-version: 8.1
-        tools: composer:v2
+        php-version: 8.2
+        tools: composer
         coverage: none
 
     - name: Install Dependencies
       run: composer update --no-interaction --no-progress --ansi
 
-    - name: Run PHP-CS-Fixer
-      run: vendor/bin/php-cs-fixer fix -v --allow-risky=yes --dry-run --ansi
+    - name: Run Pint
+      run: vendor/bin/pint --test
 
   phpstan:
     runs-on: ubuntu-latest
@@ -40,8 +40,8 @@ jobs:
     - name: Setup PHP
       uses: shivammathur/setup-php@v2
       with:
-        php-version: 8.1
-        tools: composer:v2
+        php-version: 8.2
+        tools: composer
         coverage: none
 
     - name: Install Dependencies
