@@ -3,7 +3,7 @@
 use Symfony\Component\Process\Process;
 
 it('fails all tests in EnabledTest.php', function (array $env, int $failedTests) {
-    $process = new Process(['php', './vendor/bin/pest', '--group', 'runnable'], __DIR__ . '/../', $env);
+    $process = new Process(['php', './vendor/bin/pest', '--group', 'runnable'], __DIR__.'/../', $env);
     $process->run();
 
     expect($process->getOutput())
