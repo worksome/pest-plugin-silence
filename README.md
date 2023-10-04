@@ -1,3 +1,5 @@
+This repository has been archived and is no longer maintained.
+
 # Pest Plugin Silence
 
 [![Tests](https://github.com/worksome/pest-plugin-silence/actions/workflows/tests.yml/badge.svg)](https://github.com/worksome/pest-plugin-silence/actions/workflows/tests.yml)
